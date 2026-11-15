@@ -1,0 +1,80 @@
+/* Variaveis para facilitar na hora de colocar as cores */
+
+:root {
+    --main-color: #d3ad7f;/* Cor principal */
+    --black: #13131a;
+    --bg: #010103;/* Utilizar nos backgrounds */
+    --border: 0.1rem solid rgba(255,255,255,0.3); /* Borda padrão */
+    font-size: 10px;
+
+}
+
+/* Configuraço~es padro~es do nosso site */
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize; /* Deixar todas as letras no começar Maisculas */
+    transition: 0.2s linear;  /* Transição suave ao passar em alguns icones */
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background: var(--bg);
+}
+
+/* Codigo padrão de section */
+section {
+    padding: 3rem 2rem;
+    margin: 0 auto; /* em cima em baixo e zero e direita e esquerda e auto (assim centralizando os itens) */
+    max-width: 1200px;
+}
+
+.logo img {
+    max-width: 15rem;
+    height: auto;
+}
+
+.header {
+    position: fixed; /* posicionar o cabeçalho no topo da página (mesmo descendo a pagina o header ainda vai estar visível) */
+    top: 0; /* Posicionar no topo da página */
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-bottom: var(--border);
+}
+
+.header section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Espaçamento entre os elementos */
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.navbar  a {
+    margin: 0 1rem;
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+    border-bottom: 0.1rem solid var(--main-color);
+    padding-bottom: 0.5rem; /* Dando uma distancia na borda inferior */
+    font-size: 2rem; /* Aumentando o tamanho da fonte ao passar o mouse */
+}
+
+.icons img {
+    margin: 1rem;
+    cursor: pointer; /* Pra ficar visível o cursor ao passar o mouse */
+}
+
+.icons img:hover {
+    width: 40px;
+    height: 40px;
+}
+
